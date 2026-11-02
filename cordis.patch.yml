@@ -1,0 +1,6 @@
+# bundle patch for dsh-skill-peek: inserts its plugin row into the web profile
+# roster. Install with
+#   dsh plugin --profile <profile> add link:<absolute-path-to-this-repo>
+- insert:
+    - id: skill-peek
+      name: 'dsh-skill-peek'

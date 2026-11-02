@@ -1,0 +1,59 @@
+{
+  "name": "dsh-skill-peek",
+  "version": "0.1.1",
+  "description": "A lightweight sidebar plugin for quickly searching the skills this machine loads — search and read SKILL.md, nothing else.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "icon": "assets/icon-180.png",
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "assets/",
+    "screenshots.json",
+    "README.md"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.3"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.1-rc.3 <0.3.0 || >=0.3.0-rc.1"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-skills",
+    "skill-search",
+    "skill-list",
+    "sidebar",
+    "lightweight"
+  ],
+  "author": "bona11122",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bona11122/dsh-skill-peek.git"
+  },
+  "homepage": "https://github.com/bona11122/dsh-skill-peek#readme",
+  "bugs": {
+    "url": "https://github.com/bona11122/dsh-skill-peek/issues"
+  }
+}

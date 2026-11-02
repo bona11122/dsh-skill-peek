@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# generated preview data — it is exported from the local machine and must not be published
+preview/data.js
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# local install backups and packs
+*.bak-*
+*.tgz
+
+# local asset helpers (icon renderer, demo dataset used for the screenshots)
+.build/
+.shots/

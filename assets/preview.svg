@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="dsh-skill-peek panel: a grouped skill list on the left, a SKILL.md viewer on the right">
+  <defs>
+    <linearGradient id="pane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11161d"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="700" rx="14" fill="#0d1117" stroke="#232b36"/>
+
+  <!-- app rail -->
+  <rect x="0" y="14" width="56" height="672" rx="14" fill="#0a0e13"/>
+  <circle cx="28" cy="34" r="7" fill="#1f6feb"/>
+  <rect x="18" y="66" width="20" height="20" rx="6" fill="#1b2028"/>
+  <rect x="18" y="98" width="20" height="20" rx="6" fill="#1b2028"/>
+  <rect x="18" y="130" width="20" height="20" rx="6" fill="#2f7bf6" opacity="0.85"/>
+  <rect x="18" y="162" width="20" height="20" rx="6" fill="#1b2028"/>
+
+  <!-- list pane -->
+  <rect x="56" y="0" width="414" height="700" fill="url(#pane)"/>
+  <text x="76" y="46" fill="#e6edf3" font-family="Segoe UI, system-ui, sans-serif" font-size="15" font-weight="600">技能速览</text>
+  <text x="152" y="46" fill="#6e7681" font-family="Segoe UI, system-ui, sans-serif" font-size="11.5">检索与查看 · v0.1.1</text>
+  <text x="452" y="46" fill="#7d8590" font-family="Segoe UI, system-ui, sans-serif" font-size="11.5" text-anchor="end">32 技能 · 1 组</text>
+  <rect x="72" y="62" width="386" height="32" rx="8" fill="#161b22" stroke="#2a323d"/>
+  <text x="86" y="83" fill="#6e7681" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">搜索名称或描述…</text>
+  <rect x="73" y="113" width="7" height="7" fill="#8b949e" transform="rotate(45 76.5 116.5)"/>
+  <text x="90" y="122" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.7">用户 · 32</text>
+
+  <!-- row 1 (active) -->
+  <rect x="56" y="134" width="414" height="58" fill="#161b22"/>
+  <rect x="56" y="134" width="2" height="58" fill="#2f7bf6"/>
+  <text x="76" y="158" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">writing-skills</text>
+  <rect x="382" y="144" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="156" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="144" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="156" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="178" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Create, edit, and verify agent skills.</text>
+
+  <!-- row 2 -->
+  <text x="76" y="218" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">brainstorming</text>
+  <rect x="382" y="204" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="216" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="204" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="216" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="238" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Use before any creative work — a feature, a plan, a talk.</text>
+
+  <!-- row 3 -->
+  <text x="76" y="278" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">code-review-and-quality</text>
+  <rect x="382" y="264" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="276" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="264" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="276" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="298" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Multi-axis review before a change is merged.</text>
+
+  <!-- row 4 -->
+  <text x="76" y="338" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">maoying-beat-pacing</text>
+  <rect x="382" y="324" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="336" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="324" width="34" height="16" rx="3" fill="#161b22" stroke="#8b8b93" stroke-dasharray="2 2" stroke-opacity="0.7"/>
+  <text x="441" y="336" fill="#8b8b93" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle" text-decoration="line-through">用户</text>
+  <text x="76" y="358" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">网文爽点节奏方法论：期待感与释放配比。</text>
+
+  <!-- row 5 -->
+  <text x="76" y="398" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">systematic-debugging</text>
+  <rect x="382" y="384" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="396" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="384" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="396" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="418" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Use for any bug or unexpected behaviour, before a fix.</text>
+
+  <!-- row 6 -->
+  <text x="76" y="458" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">office-docx</text>
+  <rect x="382" y="444" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="456" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="444" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="456" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="478" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Create, read, edit and validate .docx files.</text>
+
+  <!-- row 7 -->
+  <text x="76" y="518" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">office-xlsx</text>
+  <rect x="382" y="504" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="516" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="504" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="516" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="538" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Read, create, edit and validate .xlsx workbooks.</text>
+
+  <!-- row 8 -->
+  <text x="76" y="578" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="13.5">test-driven-development</text>
+  <rect x="382" y="564" width="34" height="16" rx="3" fill="#10243d" stroke="#2f7bf6" stroke-opacity="0.55"/>
+  <text x="399" y="576" fill="#6ea8fe" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">模型</text>
+  <rect x="424" y="564" width="34" height="16" rx="3" fill="#0f2a1c" stroke="#17a34a" stroke-opacity="0.55"/>
+  <text x="441" y="576" fill="#4ade80" font-family="Segoe UI, system-ui, sans-serif" font-size="9.5" text-anchor="middle">用户</text>
+  <text x="76" y="598" fill="#8b949e" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">Write the test before the implementation.</text>
+
+  <!-- splitter -->
+  <rect x="470" y="0" width="6" height="700" fill="#0d1117"/>
+  <rect x="472" y="0" width="1" height="700" fill="#2b3440"/>
+  <rect x="470" y="300" width="6" height="100" fill="#2f7bf6" opacity="0.55"/>
+
+  <!-- detail pane -->
+  <text x="506" y="52" fill="#e6edf3" font-family="Cascadia Mono, Consolas, monospace" font-size="18" font-weight="600">writing-skills</text>
+
+  <rect x="506" y="68" width="58" height="20" rx="4" fill="none" stroke="#2b3440"/>
+  <text x="535" y="82" fill="#9aa4b2" font-family="Segoe UI, system-ui, sans-serif" font-size="11" text-anchor="middle">用户技能</text>
+  <rect x="572" y="68" width="74" height="20" rx="4" fill="none" stroke="#2b3440"/>
+  <text x="609" y="82" fill="#9aa4b2" font-family="Segoe UI, system-ui, sans-serif" font-size="11" text-anchor="middle">filesystem</text>
+  <rect x="654" y="68" width="296" height="20" rx="4" fill="none" stroke="#2b3440"/>
+  <text x="666" y="82" fill="#7d8590" font-family="Cascadia Mono, Consolas, monospace" font-size="10.5">~/.dsh/skills/writing-skills/SKILL.md</text>
+
+  <text x="506" y="122" fill="#6e7681" font-family="Segoe UI, system-ui, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.1">SKILL.MD</text>
+
+  <text x="506" y="152" fill="#c9d1d9" font-family="Segoe UI, system-ui, sans-serif" font-size="13">创建、修改与校验 agent 技能的写作纪律。</text>
+  <text x="506" y="176" fill="#c9d1d9" font-family="Segoe UI, system-ui, sans-serif" font-size="13">在新建一个技能、改写已有技能，或交付前自检时加载。</text>
+
+  <text x="506" y="216" fill="#e6edf3" font-family="Segoe UI, system-ui, sans-serif" font-size="13" font-weight="600">何时使用</text>
+  <text x="506" y="242" fill="#9aa4b2" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">· 技能还没有 SKILL.md，需要从零写一份</text>
+  <text x="506" y="266" fill="#9aa4b2" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">· 描述与正文对不上，模型不加载或错误加载</text>
+  <text x="506" y="290" fill="#9aa4b2" font-family="Segoe UI, system-ui, sans-serif" font-size="12.5">· 需要在部署前做一遍可复现的验证</text>
+
+  <rect x="506" y="316" width="656" height="146" rx="8" fill="#161b22" stroke="#232b36"/>
+  <text x="524" y="342" fill="#7ee787" font-family="Cascadia Mono, Consolas, monospace" font-size="12">---</text>
+  <text x="524" y="364" fill="#c9d1d9" font-family="Cascadia Mono, Consolas, monospace" font-size="12">name: writing-skills</text>
+  <text x="524" y="386" fill="#c9d1d9" font-family="Cascadia Mono, Consolas, monospace" font-size="12">description: Create, edit, and verify agent skills.</text>
+  <text x="524" y="408" fill="#c9d1d9" font-family="Cascadia Mono, Consolas, monospace" font-size="12">disable-model-invocation: false</text>
+  <text x="524" y="430" fill="#7ee787" font-family="Cascadia Mono, Consolas, monospace" font-size="12">---</text>
+
+  <rect x="506" y="518" width="656" height="1" fill="#1c232c"/>
+  <text x="506" y="546" fill="#6e7681" font-family="Segoe UI, system-ui, sans-serif" font-size="11.5">原文视图：正文按原样渲染。</text>
+  <text x="506" y="570" fill="#6e7681" font-family="Segoe UI, system-ui, sans-serif" font-size="11.5">拖动中间的竖线调整两栏宽度，双击恢复 340px。</text>
+</svg>

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>技能速览 · 界面预览</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f4f4f5;
+        --surface: #ffffff;
+        --surface-2: #fafafa;
+        --line: #e4e4e7;
+        --text: #18181b;
+        --muted: #71717a;
+        --accent: #2563eb;
+        /* stand-ins for the shell's design tokens, so the plugin's own
+           var(--dsw-*) fallbacks resolve the way they do in the real panel */
+        --dsw-alias-state-business-primary: #2563eb;
+        --dsw-alias-state-success-primary: #15803d;
+        --dsw-alias-label-tertiary: #a1a1aa;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131316;
+          --surface: #1b1b1f;
+          --surface-2: #202024;
+          --line: #2c2c31;
+          --text: #ececef;
+          --muted: #9a9aa3;
+          --accent: #6ea8fe;
+          --dsw-alias-state-business-primary: #6ea8fe;
+          --dsw-alias-state-success-primary: #4ade80;
+          --dsw-alias-label-tertiary: #6b6b74;
+        }
+      }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+      .note {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        padding: 8px 16px;
+        font-size: 11.5px;
+        color: var(--muted);
+        background: var(--surface-2);
+        border-bottom: 1px solid var(--line);
+      }
+      .note b { color: var(--text); font-weight: 600; }
+      .app { flex: 1; display: flex; min-height: 0; }
+      .rail {
+        width: 52px;
+        border-right: 1px solid var(--line);
+        background: var(--surface-2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 12px 0;
+      }
+      .rail .dot {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        display: grid;
+        place-items: center;
+        color: var(--muted);
+      }
+      .rail .dot.active { background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); }
+      .rail .dot svg { width: 16px; height: 16px; }
+      .panels {
+        width: 232px;
+        border-right: 1px solid var(--line);
+        background: var(--surface);
+        padding: 12px 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      .panels .hint { font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); padding: 4px 8px 8px; }
+      .panelrow { display: flex; align-items: center; gap: 9px; padding: 7px 9px; border-radius: 7px; color: var(--muted); }
+      .panelrow svg { width: 15px; height: 15px; flex: none; }
+      .panelrow.active { background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--text); font-weight: 500; }
+      .main { flex: 1; min-width: 0; padding: 14px; display: flex; }
+      .card {
+        flex: 1;
+        min-width: 0;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+      }
+      #panel { flex: 1; min-width: 0; min-height: 0; display: flex; }
+    </style>
+  </head>
+  <body>
+    <div class="note">
+      <b>界面预览</b>
+      <span id="note-text">数据来自本机扫描；插件本体就是这个界面，装上后出现在左侧面板列表「技能速览」。</span>
+    </div>
+    <div class="app">
+      <div class="rail">
+        <div class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3h12v8H6l-3 2.5V11H2z" stroke-linejoin="round"/></svg></div>
+        <div class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2" y="2" width="5" height="5" rx="1"/><rect x="9" y="2" width="5" height="5" rx="1"/><rect x="2" y="9" width="5" height="5" rx="1"/><rect x="9" y="9" width="5" height="5" rx="1"/></svg></div>
+        <div class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3.2l2.1 1.3"/></svg></div>
+      </div>
+      <div class="panels">
+        <div class="hint">面板</div>
+        <div class="panelrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 3h12v8H6l-3 2.5V11H2z" stroke-linejoin="round"/></svg>会话</div>
+        <div class="panelrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 4h10M3 8h10M3 12h6" stroke-linecap="round"/></svg>任务</div>
+        <div class="panelrow"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="2.5" y="2.5" width="11" height="11" rx="2"/><path d="M5.5 8h5"/></svg>插件</div>
+        <div class="panelrow active">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1.6 8s2.3-4 6.4-4 6.4 4 6.4 4-2.3 4-6.4 4S1.6 8 1.6 8z" />
+            <circle cx="8" cy="8" r="1.9" />
+          </svg>
+          技能速览
+        </div>
+      </div>
+      <div class="main">
+        <div class="card"><div id="panel"></div></div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+      // Stand-in for the web shell's module loader: capture the bundle, then run
+      // its factory with a require() that only ever resolves "react" lazily.
+      window.__ModuleLoader__ = {
+        load(def) {
+          window.__peekDef = def;
+        },
+      };
+    </script>
+    <script src="../lib/client.js"></script>
+    <script>
+      (async () => {
+        const data = window.__PEEK_DATA;
+        if (!data) {
+          document.getElementById("panel").textContent =
+            "缺少 preview/data.js —— 先运行 node tools/dump-preview-data.mjs 生成本机快照。";
+          document.getElementById("note-text").textContent =
+            "data.js 不在仓库里：它包含本机技能正文与绝对路径，clone 后需要自己生成。";
+          return;
+        }
+        const version = await fetch("../package.json")
+          .then((r) => r.json())
+          .then((pkg) => pkg.version)
+          .catch(() => null);
+        const mod = window.__peekDef.factory(() => ({}));
+        const fetchList = async () => ({ cwd: data.cwd, complete: data.complete, skills: data.skills });
+        const fetchRead = async (name) => ({ name, content: data.contents[name] ?? "" });
+        mod.__preview.mountPeek(document.getElementById("panel"), { fetchList, fetchRead, version });
+
+        const groups = new Set(data.skills.map((s) => s.level)).size;
+        document.getElementById("note-text").textContent =
+          `预览数据：${data.skills.length} 个本机文件系统技能 · ${groups} 组 · 快照于 ` +
+          new Date(data.generatedAt).toLocaleString("zh-CN", { hour12: false }) +
+          "。宿主运行时还会合并插件注册的技能，这部分需要真正装进 DSH 才能看到。";
+      })();
+    </script>
+  </body>
+</html>
